@@ -8,7 +8,7 @@ trigger:
       - main
     paths:
       include:
-      - Shopping/Shopping.Client/*
+      - Shopping/Shopping2.Client/*
       - aks/shoppingclient.yaml
 
 resources:
@@ -20,7 +20,7 @@ variables:
   dockerRegistryServiceConnection: 'd7c1fdae-3434-4676-b774-7afbc965e437'
   imageRepository: 'shoppingclient'
   containerRegistry: 'bulutshoppingacr.azurecr.io'
-  dockerfilePath: 'Shopping/Shopping.Client/Dockerfile'
+  dockerfilePath: 'Shopping/Shopping2.Client/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'bulutshoppingacr1597e4ba-auth'
 
